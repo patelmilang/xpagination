@@ -15,6 +15,7 @@ const EmployeeList = () => {
       setData(result);
     } catch (error) {
       console.error("Error fetching data:", error);
+      alert('failed to fetch data');
     }
   };
    
@@ -72,6 +73,9 @@ const EmployeeList = () => {
           className="pagination-button"
           onClick={handlePrev}
           //disabled={currentPage === 1}
+          style={{
+            display:currentPage === 1?"none":"block"
+          }}
         >
           Previous
         </button>
@@ -80,6 +84,9 @@ const EmployeeList = () => {
           className="pagination-button"
           onClick={handleNext}
           //disabled={currentPage === totalPages}
+          style={{
+            display:currentPage === totalPages?"none":"block"
+          }}
         >
           Next
         </button>
