@@ -71,7 +71,7 @@ const EmployeeList = () => {
         <button
           className="pagination-button"
           onClick={handlePrev}
-          disabled={currentPage === 1}
+          //disabled={currentPage === 1}
         >
           Previous
         </button>
@@ -79,7 +79,7 @@ const EmployeeList = () => {
         <button
           className="pagination-button"
           onClick={handleNext}
-          disabled={currentPage === totalPages}
+          //disabled={currentPage === totalPages}
         >
           Next
         </button>
